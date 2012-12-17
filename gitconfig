@@ -1,0 +1,14 @@
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/vairoja/.gitignore_global
+[user]
+	name = Vairoj Arunyaangkul
+	email = vairoja@amazon.com
+[push]
+	default = tracking
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	st = status
+	co = checkout
+	pr = pull --rebase
