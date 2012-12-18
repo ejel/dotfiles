@@ -4,6 +4,7 @@
 let g:CSApprox_verbose_level = 0
 
 set nocompatible
+set nomodeline
 
 "initialize Vundle
 filetype off
