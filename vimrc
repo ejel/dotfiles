@@ -290,7 +290,12 @@ endif
 " else in your ~/.vimrc file, such as:
 " nmap <silent> <Leader>q <Plug>PeepOpen
 
+" NERDTree settings
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.swp$']
+" close VIM if the only window opened is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary")  | q | endif
+
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
@@ -394,9 +399,6 @@ set backupdir=~/.vim/backups
 
 " when press { + Enter, the {} block will expand.
 imap {<CR> {}<ESC>i<CR><ESC>O
-
-" NERDTree settings
-let NERDTreeIgnore=['\.swp$']
 
 nnoremap <Esc>A <up>
 nnoremap <Esc>B <down>
