@@ -1,2 +1,7 @@
+# OSX shits
 .DS_Store
+.Spotlight-V100
+.Thrashes
+
+# VIM
 *.swp
