@@ -46,7 +46,6 @@ export EDITOR='subl -w'
 alias sshva='ssh -t vairoja.desktop.amazon.com "screen -dR"'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 
-
-
-# perlbrew switch perl-5.14.2
-
+# OS X Alt + Arrows
+bindkey "^[[1;9D" backward-word # alt + <-
+bindkey "^[[1;9C" forward-word # alt+ ->
