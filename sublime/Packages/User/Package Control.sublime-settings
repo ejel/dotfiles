@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"Base16 Color Schemes",
+		"GitGutter",
+		"Sass",
+		"Theme - Spacegray",
+		"Tomorrow Color Schemes",
+		"Vintageous"
+	],
+	"repositories":
+	[
+		"https://github.com/guillermooo/Vintageous"
+	]
+}
