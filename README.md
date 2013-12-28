@@ -1,4 +1,9 @@
 dotfiles
 ========
 
-My personal dotfiles which is supposed to be shared across computers I work on
+My own dotfiles.
+
+    git clone https://github.com/ejel/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles    
+    git submodule update --init
+    symlink each dotfile
