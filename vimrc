@@ -30,6 +30,7 @@ Bundle 'msanders/snipmate.vim'
 
 Bundle 'altercation/vim-colors-solarized'
 
+set autoread
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -247,6 +248,9 @@ set hidden
 set ic
 set smartcase
 
+"show partial line instead of @@@@
+set display=lastline
+
 colorscheme solarized
 set background=light "solarize light theme
 call togglebg#map("<F5>")
@@ -265,8 +269,8 @@ if has("gui_running")
     endif
 
     if has("gui_mac") || has("gui_macvim")
-        set guifont=Menlo:h16
-        set transparency=7
+        set guifont=Source_Code_Pro:h16
+        set transparency=0
     endif
 
     if has("gui_win32") || has("gui_win32s")
