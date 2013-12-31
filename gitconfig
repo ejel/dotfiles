@@ -12,3 +12,12 @@
 	st = status
 	co = checkout
 	pr = pull --rebase
+	nuke = reset --hard @{u}
+	wipebranches = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+	rc = rebase --continue
+	com = commit
+	coma = commit --amend
+[branch]
+	autosetuprebase = always
+[amazon]
+	append-cr-url = true
