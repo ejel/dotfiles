@@ -33,7 +33,7 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:~/Cloud9BrazilBuild-1.0/bin:~/.
 
 source $ZSH/oh-my-zsh.sh
 
-export PAGER=vimpager
+export PAGER=less
 export EDITOR='subl -w'
 
 # OS X Alt + Arrows
