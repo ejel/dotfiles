@@ -1,0 +1,4 @@
+[
+  { "keys": ["ctrl+f"], "command": "move", "args": { "by": "pages", "forward": true} },
+  { "keys": ["ctrl+b"], "command": "move", "args": { "by": "pages", "forward": false} }
+]
