@@ -2,6 +2,8 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = vim
+	pager = less -FMRiX
 [user]
 	name = Vairoj Arunyaangkul
 	email = vairoja@amazon.com
@@ -17,7 +19,7 @@
 	rc = rebase --continue
 	com = commit
 	coma = commit --amend
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
 [branch]
 	autosetuprebase = always
-[amazon]
-	append-cr-url = true
+

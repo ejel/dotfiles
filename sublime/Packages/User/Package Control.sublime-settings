@@ -1,8 +1,13 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Base16 Color Schemes",
 		"GitGutter",
+		"Mediawiker",
+		"Package Control",
 		"Sass",
 		"Theme - Spacegray",
 		"Tomorrow Color Schemes",
