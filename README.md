@@ -11,3 +11,8 @@ My own dotfiles.
 
 ## VIM
 Launch `vim`, run `:BundleInstall`
+
+## Keyboard Mapping
+1. Install [Karabiner](https://pqrs.org/osx/karabiner/index.html.en) and [Seil](https://pqrs.org/osx/karabiner/seil.html)
+2. Map Capslock to Control at OS X level in System Preferences
+3. ln -s ~/.dotfiles/karabiner/privates.xml ~/Library/Application\ Support/Karabiner/privates.xml
