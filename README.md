@@ -19,5 +19,8 @@ Launch `vim`, run `:BundleInstall`
 5. Launch Karabiner and enable Remap Left Control to Hyper.
 
 ## Symlinks
+    TODO use dotbot for symlinking
+    ~/.dotfiles/prezto --> ~/.zprezto
+    All zrc files
     ~/.dotfiles/karabiner/privates.xml --> ~/Library/Application\ Support/Karabiner/privates.xml
     ~/.dotfiles/quicksilver/com.blacktree.Quicksiver.plist --> ~/Library/Preferences/com.blacktree.Quicksilver.plist
