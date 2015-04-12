@@ -31,21 +31,23 @@ plugins=(osx autojump git brew)
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:~/.rvm/bin:$PATH
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
+export ROUGE_EVAL_HOME=~/ROUGE-1.5.5/data
 
 source $ZSH/oh-my-zsh.sh
 
 zstyle ':completion:*' hosts off # disable hostname completion which is damn slow
 
-export P4CONFIG=.p4config
-
-export PAGER=vimpager
+export PAGER=less
 export EDITOR='subl -w'
-
-# alias dst='ssh -t vairoja.desktop.amazon.com "cd /workplace/vairoja/windowshop-addon/src/AmazonFamilyWindowShopApplicationMason; zsh"'
-
-alias sshva='ssh -t vairoja.desktop.amazon.com "screen -dR"'
-alias scpresume="rsync --partial --progress --rsh=ssh"
 
 # OS X Alt + Arrows
 bindkey "^[[1;9D" backward-word # alt + <-
 bindkey "^[[1;9C" forward-word # alt+ ->
+
+autoload -U zmv
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+export PERL5LIB=$PERL5LIB:~/mead/lib:~/mead/lib/arch
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+

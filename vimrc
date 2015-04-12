@@ -399,8 +399,8 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 
-set directory=~/.vim/swaps
-set backupdir=~/.vim/backups
+set directory=~/.vim/swaps//
+set backupdir=~/.vim/backups//
 
 " when press { + Enter, the {} block will expand.
 imap {<CR> {}<ESC>i<CR><ESC>O
