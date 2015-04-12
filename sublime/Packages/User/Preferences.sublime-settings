@@ -1,6 +1,7 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Base16 Color Schemes/base16-ocean.dark.tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.light.tmTheme",
+	"draw_minimap_border": true,
 	"font_face": "Menlo",
 	"font_options":
 	[

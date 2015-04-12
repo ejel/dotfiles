@@ -1,4 +1,7 @@
 [
   { "keys": ["ctrl+f"], "command": "move", "args": { "by": "pages", "forward": true} },
-  { "keys": ["ctrl+b"], "command": "move", "args": { "by": "pages", "forward": false} }
+  { "keys": ["ctrl+b"], "command": "move", "args": { "by": "pages", "forward": false} },
+  { "keys": ["alt+j"], "command": "run_macro_file", "args": { "file": "Packages/User/vi_gj.sublime-macro" }, "context": [ {"key": "setting.command_mode"}] },
+  { "keys": ["alt+k"], "command": "run_macro_file", "args": { "file": "Packages/User/vi_gk.sublime-macro" }, "context": [ {"key": "setting.command_mode"}] }
+
 ]

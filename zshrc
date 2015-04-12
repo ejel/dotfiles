@@ -29,7 +29,9 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(osx autojump git brew)
 
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:~/Cloud9BrazilBuild-1.0/bin:~/.rvm/bin:$PATH
+#export PATH=/apollo/env/ruby193/bin:/apollo/env/SDETools/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/.rvm/bin:$PATH
+export PATH=/apollo/env/SDETools/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/.rvm/bin:$PATH
+export PATH=/Users/vairoja/MShopIphoneApp/env/Appledoc-2.2.x-XcodeBuildTool-mainline/appledoc:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,9 +46,8 @@ bindkey "^[[1;9C" forward-word # alt+ ->
 
 zstyle ':completion:*' hosts off # disable hostname completion which is damn slow
 
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/22.3
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/22.3
 export I_WANT_NO_DEVTOOLS_SUPPORT_NOW_AND_FOREVER=JAVA_HOME
 
 export P4CONFIG=.p4config
@@ -58,6 +59,27 @@ alias bb='brazil-build'
 # alias dst='ssh -t vairoja.desktop.amazon.com "cd /workplace/vairoja/windowshop-addon/src/AmazonFamilyWindowShopApplicationMason; zsh"'
 
 alias ssh='/usr/bin/ssh -2'
-alias sshva='ssh -t vairoja.desktop.amazon.com "screen -dR"'
+alias sshva='ssh -t vairoja-1.desktop.amazon.com "screen -dR"'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 
+# Android
+alias wsclear='adb shell pm clear com.amazon.windowshop'
+alias wskill='adb shell am force-stop com.amazon.windowshop'
+
+# Ensure Kerberos ticket is valid for every command invocation
+ensure_kerberos() {
+  klist -s || kinit -f
+}
+precmd() {
+  ensure_kerberos
+}
+
+pullProgressForHost() {
+  ssh -o ConnectTimeout=1 $1 'tail -f /apollo/var/logs/apollo-update.root.log.*(om[1]) | grep "Getting\|exit code" \
+      | sed "s/pullPackage .*: Getting package \(.*\) by\|from .*/Pull Started: \1/" \
+      | sed "s/pullPackage .*: .*exit code: \(.*\)/Pull Ended:   Exit Code: \1/"'
+}
+
+packagesPulledForHost() {
+ ssh -o ConnectTimeout=1 $1 'cat /apollo/var/logs/apollo-update.root.log.*(om[1]) | grep -c "pullPackage .*: Operation completed" '
+}
