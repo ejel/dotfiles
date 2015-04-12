@@ -1,7 +1,9 @@
 *.cache
-Package Control.last-run
 Package Control.ca-bundle
-Package Control.ca-list
-Package Control.system-ca-bundle
 Package Control.ca-certs/
+Package Control.ca-list
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
 Package Control.cache/

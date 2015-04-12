@@ -37,8 +37,6 @@ source $ZSH/oh-my-zsh.sh
 
 zstyle ':completion:*' hosts off # disable hostname completion which is damn slow
 
-export P4CONFIG=.p4config
-
 export PAGER=less
 export EDITOR='subl -w'
 

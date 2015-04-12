@@ -2,7 +2,8 @@
 	"bold_folder_labels": true,
 	"theme": "Spacegray Light.sublime-theme",
 	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
-	"font_face": "Input-Regular",
+	"font_face": "Menlo",
+	"draw_minimap_border": true,
 	"font_options":
 	[
 		"no_bold"
