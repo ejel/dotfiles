@@ -42,11 +42,6 @@ export P4CONFIG=.p4config
 export PAGER=less
 export EDITOR='subl -w'
 
-# alias dst='ssh -t vairoja.desktop.amazon.com "cd /workplace/vairoja/windowshop-addon/src/AmazonFamilyWindowShopApplicationMason; zsh"'
-
-alias sshva='ssh -t vairoja.desktop.amazon.com "screen -dR"'
-alias scpresume="rsync --partial --progress --rsh=ssh"
-
 # OS X Alt + Arrows
 bindkey "^[[1;9D" backward-word # alt + <-
 bindkey "^[[1;9C" forward-word # alt+ ->
@@ -57,3 +52,4 @@ autoload -U zmv
 
 export PERL5LIB=$PERL5LIB:~/mead/lib:~/mead/lib/arch
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+

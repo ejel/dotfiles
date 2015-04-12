@@ -1,5 +1,6 @@
 {
 	"bold_folder_labels": true,
+	"theme": "Spacegray Light.sublime-theme",
 	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"font_face": "Input-Regular",
 	"font_options":
@@ -11,8 +12,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"SideBarEnhancements",
-		"Vintage"
+		"Vintage",
+		"SideBarEnhancements"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
