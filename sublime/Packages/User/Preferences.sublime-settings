@@ -1,23 +1,25 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Base16 Color Schemes/base16-ocean.dark.tmTheme",
-	"font_face": "Menlo",
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+	"font_face": "Input-Regular",
 	"font_options":
 	[
 		"no_bold"
 	],
-	"font_size": 14,
+	"font_size": 16,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"SideBarEnhancements",
 		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"vintageous_use_ctrl_keys": true,
 	"word_wrap": true
 }

@@ -6,9 +6,13 @@
 	name = ejel
 	email = e.jelly@gmail.com
 [push]
-	default = tracking
+	default = simple
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	st = status
 	co = checkout
 	pr = pull --rebase
+	wipebranches = branch
+	cleanbranches = git wipebranches branch --merged | grep -v * | xargs -n 1 git branch -d
+[credential]
+	helper = osxkeychain
