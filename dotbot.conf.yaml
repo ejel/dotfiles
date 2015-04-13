@@ -1,0 +1,23 @@
+- clean: ['~']
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.zshenv: zshenv
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.zpreztorc: zpreztorc
+    ~/.zprezto: prezto/
+    ~/.vimrc: vimrc
+    ~/.gvimrc: gvimrc
+    ~/.vim: vim/
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.tmux.conf: tmux.conf
+    ~/Library/Application Support/Sublime Text 3/Packages/User:
+        create: true
+        path: sublime/Packages/User/
+    ~/Library/Application Support/Karabiner/private.xml:
+        create: true
+        path: karabiner/private.xml
