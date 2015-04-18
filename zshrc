@@ -7,6 +7,4 @@ fi
 bindkey "^[[1;9D" backward-word # alt + <-
 bindkey "^[[1;9C" forward-word # alt+ ->
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
 
