@@ -5,7 +5,7 @@ My own dotfiles.
 
     git clone https://github.com/ejel/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
-    ./dotbot-install dotbot.conf.yaml
+    ./dotbot-install -c ./dotbot.conf.yaml
 
 
 ## VIM
