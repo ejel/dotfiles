@@ -45,24 +45,8 @@ typeset -gU cdpath fpath mailpath path
 path=(
   ~/bin
   /usr/local/{bin,sbin}
-  ~/.rvm/bin
   $path
 )
-
-export JAVA_HOME=`/usr/libexec/java_home`
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
-export ROUGE_EVAL_HOME=~/ROUGE-1.5.5/data
-export PERL5LIB=$PERL5LIB:~/mead/lib:~/mead/lib/arch
-
-# pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# perlbrew
-source ~/perl5/perlbrew/etc/bashrc
-
 
 #
 # Less
@@ -79,13 +63,3 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
-#
-# Temporary Files
-#
-
-if [[ ! -d "$TMPDIR" ]]; then
-  export TMPDIR="/tmp/$LOGNAME"
-  mkdir -p -m 700 "$TMPDIR"
-fi
-
-TMPPREFIX="${TMPDIR%/}/zsh"
