@@ -10,6 +10,7 @@
     ~/.zpreztorc: zpreztorc
     ~/.zprezto: prezto/
     ~/.vimrc: vimrc
+    ~/.config/nvim/init: vimrc
     ~/.gvimrc: gvimrc
     ~/.vim: vim/
     ~/.gitconfig: gitconfig
