@@ -7,7 +7,6 @@ My own dotfiles.
     cd ~/.dotfiles
     ./dotbot-install -d ~/.dotfiles -c dotbot.conf.yaml
 
-
 ## VIM
 Launch `vim`, run `:BundleInstall`
 
