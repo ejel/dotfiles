@@ -10,15 +10,14 @@
     ~/.zpreztorc: zpreztorc
     ~/.zprezto: prezto/
     ~/.vimrc: vimrc
-    ~/.config/nvim/init: vimrc
-    ~/.gvimrc: gvimrc
     ~/.vim: vim/
+    ~/.config/nvim/init.vim: vimrc
+      create: true
+    ~/.config/karabiner: karabiner
+      create: true
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.tmux.conf: tmux.conf
     ~/Library/Application Support/Sublime Text 3/Packages/User:
         create: true
         path: sublime/Packages/User/
-    ~/Library/Application Support/Karabiner/private.xml:
-        create: true
-        path: karabiner/private.xml

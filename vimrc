@@ -114,8 +114,8 @@ filetype indent on
 syntax on
 
 "some stuff to get the mouse going in term
+set mouse=a
 if !has('nvim')
-    set mouse=a
     set ttymouse=xterm2
 endif
 
@@ -125,6 +125,9 @@ set hidden
 "Activate smartcase
 set ic
 set smartcase
+
+"use system clipboard as default register
+set clipboard=unnamedplus
 
 "show partial line instead of @@@@
 set display=lastline
@@ -173,7 +176,7 @@ nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
 let g:ctrlp_map = '<c-t>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 "jump to last cursor position when opening a file
 "dont do it when writing a commit log entry
