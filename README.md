@@ -11,7 +11,5 @@ My own dotfiles.
 Launch `vim`, run `:BundleInstall`
 
 ## Keyboard Mapping
-1. Install [Karabiner](https://pqrs.org/osx/karabiner/index.html.en) and [Seil](https://pqrs.org/osx/karabiner/seil.html)
-2. Map Capslock to Control at OS X level in System Preferences
-4. Launch Seil and enable Change Control_L to keycode 80.
-5. Launch Karabiner and enable Remap Left Control to Hyper.
+1. Install Karabiner Elements via Brew Cask `brew cask install karabiner-elements`
+2. All settings should already been defined in Karabiner Elements config in `~/.config/karabiner/karabiner.json`
