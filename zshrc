@@ -19,3 +19,12 @@ eval "$(fasd --init auto)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
+# JDK for JavaCard
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
