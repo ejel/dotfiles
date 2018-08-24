@@ -5,8 +5,8 @@
 	editor = vim
 	pager = less -FMRiX
 [user]
-	name = ejel
-	email = e.jelly@gmail.com
+	name = Vairoj Arunyaangkul
+	email = vairoj@gmail.com
 [push]
 	default = simple
 [alias]
