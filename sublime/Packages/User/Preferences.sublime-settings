@@ -1,9 +1,8 @@
 {
 	"bold_folder_labels": true,
-	"theme": "Spacegray Light.sublime-theme",
 	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
-	"font_face": "Menlo",
 	"draw_minimap_border": true,
+	"font_face": "Menlo",
 	"font_options":
 	[
 		"no_bold"
@@ -13,8 +12,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
