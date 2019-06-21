@@ -11,10 +11,14 @@
     ~/.zprezto: prezto/
     ~/.vimrc: vimrc
     ~/.vim: vim/
-    ~/.config/nvim/init.vim: vimrc
-      create: true
-    ~/.config/karabiner: karabiner
-      create: true
+    ~/.config/nvim/init.vim:
+        create: true
+        path: vimrc
+        force: true
+    ~/.config/karabiner:
+        create: true
+        path: karabiner
+        force: true
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.tmux.conf: tmux.conf
